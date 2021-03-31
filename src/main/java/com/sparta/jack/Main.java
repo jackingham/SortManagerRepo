@@ -20,10 +20,10 @@ public class Main {
 
     	Printer.printMessage("Enter how many numbers in array: ");
     	Scanner input= new Scanner(System.in);
-		int arraysize = input.nextInt();
-    	int[] array = new int[arraysize];
+		int arraySize = input.nextInt();
+    	int[] array = new int[arraySize];
 		Random generator = new Random();
-    	for (int i = 0; i < arraysize; i++){
+    	for (int i = 0; i < arraySize; i++){
     		array[i] = generator.nextInt(1000);
 		}
 
@@ -34,16 +34,17 @@ public class Main {
 			long startTime = System.nanoTime();
 			int[] bubbleSortedArray = bubbleSort.sortArray(array);
 			long endTime = System.nanoTime();
-			Printer.printMessage(Long.toString((endTime - startTime)/10000));
+			double bubbleSortTime = (endTime - startTime)/1000000000d;
+			Printer.printMessage("Bubble sort took "+bubbleSortTime+" seconds to complete");
 
 			Sorter mergeSort = sortFactory.getSorter(SortTypes.MERGE);
 			startTime = System.nanoTime();
 			int[] mergeSortedArray = mergeSort.sortArray(array);
 			endTime = System.nanoTime();
-			Printer.printMessage(Long.toString((endTime - startTime)/10000));
+			double mergeSortTime = (endTime - startTime)/1000000000d;
+			Printer.printMessage("Merge sort took "+mergeSortTime+" seconds to complete");
 
-
-			Printer.printMessage(Arrays.toString(bubbleSortedArray));
+			Printer.printMessage("Merge sort was "+ 100 * ((bubbleSortTime - mergeSortTime) / mergeSortTime)+"% faster");
 			Printer.printMessage(Arrays.toString(mergeSortedArray));
 
 		} catch(ArrayTooSmallException e) {
