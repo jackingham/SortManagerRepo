@@ -1,0 +1,566 @@
+[TRACE] 2021-03-31 14:04:07.077 [main] Main - New midpoint is 4 at index 6
+[TRACE] 2021-03-31 14:04:07.082 [main] Main - First array is split into indexes 0-6
+[TRACE] 2021-03-31 14:04:07.082 [main] Main - New midpoint is 45 at index 3
+[TRACE] 2021-03-31 14:04:07.082 [main] Main - First array is split into indexes 0-3
+[TRACE] 2021-03-31 14:04:07.082 [main] Main - New midpoint is 7 at index 1
+[TRACE] 2021-03-31 14:04:07.082 [main] Main - First array is split into indexes 0-1
+[TRACE] 2021-03-31 14:04:07.082 [main] Main - New midpoint is 1 at index 0
+[TRACE] 2021-03-31 14:04:07.082 [main] Main - First array is split into indexes 0-0
+[TRACE] 2021-03-31 14:04:07.083 [main] Main - New midpoint is 1 at index 0
+[TRACE] 2021-03-31 14:04:07.085 [main] Main - Inserting 1 as other half finished
+[TRACE] 2021-03-31 14:04:07.085 [main] Main - Sorted half array:
+[TRACE] 2021-03-31 14:04:07.086 [main] Main - 1
+[TRACE] 2021-03-31 14:04:07.087 [main] Main - Second array is split into indexes 1-1
+[TRACE] 2021-03-31 14:04:07.087 [main] Main - New midpoint is 7 at index 1
+[TRACE] 2021-03-31 14:04:07.087 [main] Main - Inserting 7 as other half finished
+[TRACE] 2021-03-31 14:04:07.087 [main] Main - Sorted half array:
+[TRACE] 2021-03-31 14:04:07.087 [main] Main - 7
+[TRACE] 2021-03-31 14:04:07.090 [main] Main - 1 is less than 7
+[TRACE] 2021-03-31 14:04:07.091 [main] Main - Inserting 1 to sorted array
+[TRACE] 2021-03-31 14:04:07.091 [main] Main - Sorted array so far:
+[TRACE] 2021-03-31 14:04:07.091 [main] Main - 1
+[TRACE] 2021-03-31 14:04:07.091 [main] Main - 0
+[TRACE] 2021-03-31 14:04:07.092 [main] Main - Inserting 7 as other half finished
+[TRACE] 2021-03-31 14:04:07.092 [main] Main - Sorted half array:
+[TRACE] 2021-03-31 14:04:07.092 [main] Main - 1
+[TRACE] 2021-03-31 14:04:07.092 [main] Main - 7
+[TRACE] 2021-03-31 14:04:07.092 [main] Main - Second array is split into indexes 2-3
+[TRACE] 2021-03-31 14:04:07.093 [main] Main - New midpoint is 3 at index 2
+[TRACE] 2021-03-31 14:04:07.093 [main] Main - First array is split into indexes 2-2
+[TRACE] 2021-03-31 14:04:07.093 [main] Main - New midpoint is 3 at index 2
+[TRACE] 2021-03-31 14:04:07.093 [main] Main - Inserting 3 as other half finished
+[TRACE] 2021-03-31 14:04:07.093 [main] Main - Sorted half array:
+[TRACE] 2021-03-31 14:04:07.093 [main] Main - 3
+[TRACE] 2021-03-31 14:04:07.093 [main] Main - Second array is split into indexes 3-3
+[TRACE] 2021-03-31 14:04:07.093 [main] Main - New midpoint is 45 at index 3
+[TRACE] 2021-03-31 14:04:07.094 [main] Main - Inserting 45 as other half finished
+[TRACE] 2021-03-31 14:04:07.094 [main] Main - Sorted half array:
+[TRACE] 2021-03-31 14:04:07.094 [main] Main - 45
+[TRACE] 2021-03-31 14:04:07.094 [main] Main - 3 is less than 45
+[TRACE] 2021-03-31 14:04:07.094 [main] Main - Inserting 3 to sorted array
+[TRACE] 2021-03-31 14:04:07.094 [main] Main - Sorted array so far:
+[TRACE] 2021-03-31 14:04:07.094 [main] Main - 3
+[TRACE] 2021-03-31 14:04:07.094 [main] Main - 0
+[TRACE] 2021-03-31 14:04:07.095 [main] Main - Inserting 45 as other half finished
+[TRACE] 2021-03-31 14:04:07.095 [main] Main - Sorted half array:
+[TRACE] 2021-03-31 14:04:07.095 [main] Main - 3
+[TRACE] 2021-03-31 14:04:07.095 [main] Main - 45
+[TRACE] 2021-03-31 14:04:07.095 [main] Main - 1 is less than 3
+[TRACE] 2021-03-31 14:04:07.095 [main] Main - Inserting 1 to sorted array
+[TRACE] 2021-03-31 14:04:07.095 [main] Main - Sorted array so far:
+[TRACE] 2021-03-31 14:04:07.095 [main] Main - 1
+[TRACE] 2021-03-31 14:04:07.096 [main] Main - 0
+[TRACE] 2021-03-31 14:04:07.096 [main] Main - 0
+[TRACE] 2021-03-31 14:04:07.096 [main] Main - 0
+[TRACE] 2021-03-31 14:04:07.096 [main] Main - 3 is less than 7
+[TRACE] 2021-03-31 14:04:07.096 [main] Main - Inserting 3 to sorted array
+[TRACE] 2021-03-31 14:04:07.097 [main] Main - Sorted array so far:
+[TRACE] 2021-03-31 14:04:07.097 [main] Main - 1
+[TRACE] 2021-03-31 14:04:07.097 [main] Main - 3
+[TRACE] 2021-03-31 14:04:07.097 [main] Main - 0
+[TRACE] 2021-03-31 14:04:07.097 [main] Main - 0
+[TRACE] 2021-03-31 14:04:07.097 [main] Main - 7 is less than 45
+[TRACE] 2021-03-31 14:04:07.097 [main] Main - Inserting 7 to sorted array
+[TRACE] 2021-03-31 14:04:07.097 [main] Main - Sorted array so far:
+[TRACE] 2021-03-31 14:04:07.098 [main] Main - 1
+[TRACE] 2021-03-31 14:04:07.098 [main] Main - 3
+[TRACE] 2021-03-31 14:04:07.098 [main] Main - 7
+[TRACE] 2021-03-31 14:04:07.098 [main] Main - 0
+[TRACE] 2021-03-31 14:04:07.098 [main] Main - Inserting 45 as other half finished
+[TRACE] 2021-03-31 14:04:07.098 [main] Main - Sorted half array:
+[TRACE] 2021-03-31 14:04:07.099 [main] Main - 1
+[TRACE] 2021-03-31 14:04:07.099 [main] Main - 3
+[TRACE] 2021-03-31 14:04:07.099 [main] Main - 7
+[TRACE] 2021-03-31 14:04:07.099 [main] Main - 45
+[TRACE] 2021-03-31 14:04:07.099 [main] Main - Second array is split into indexes 4-6
+[TRACE] 2021-03-31 14:04:07.099 [main] Main - New midpoint is 6 at index 5
+[TRACE] 2021-03-31 14:04:07.099 [main] Main - First array is split into indexes 4-5
+[TRACE] 2021-03-31 14:04:07.099 [main] Main - New midpoint is 66 at index 4
+[TRACE] 2021-03-31 14:04:07.099 [main] Main - First array is split into indexes 4-4
+[TRACE] 2021-03-31 14:04:07.100 [main] Main - New midpoint is 66 at index 4
+[TRACE] 2021-03-31 14:04:07.100 [main] Main - Inserting 66 as other half finished
+[TRACE] 2021-03-31 14:04:07.100 [main] Main - Sorted half array:
+[TRACE] 2021-03-31 14:04:07.100 [main] Main - 66
+[TRACE] 2021-03-31 14:04:07.100 [main] Main - Second array is split into indexes 5-5
+[TRACE] 2021-03-31 14:04:07.100 [main] Main - New midpoint is 6 at index 5
+[TRACE] 2021-03-31 14:04:07.100 [main] Main - Inserting 6 as other half finished
+[TRACE] 2021-03-31 14:04:07.100 [main] Main - Sorted half array:
+[TRACE] 2021-03-31 14:04:07.100 [main] Main - 6
+[TRACE] 2021-03-31 14:04:07.100 [main] Main - 6 is less than 66
+[TRACE] 2021-03-31 14:04:07.101 [main] Main - Inserting 6 to sorted array
+[TRACE] 2021-03-31 14:04:07.101 [main] Main - Sorted array so far:
+[TRACE] 2021-03-31 14:04:07.101 [main] Main - 6
+[TRACE] 2021-03-31 14:04:07.101 [main] Main - 0
+[TRACE] 2021-03-31 14:04:07.101 [main] Main - Inserting 66 as other half finished
+[TRACE] 2021-03-31 14:04:07.101 [main] Main - Sorted half array:
+[TRACE] 2021-03-31 14:04:07.101 [main] Main - 6
+[TRACE] 2021-03-31 14:04:07.101 [main] Main - 66
+[TRACE] 2021-03-31 14:04:07.101 [main] Main - Second array is split into indexes 6-6
+[TRACE] 2021-03-31 14:04:07.101 [main] Main - New midpoint is 4 at index 6
+[TRACE] 2021-03-31 14:04:07.101 [main] Main - Inserting 4 as other half finished
+[TRACE] 2021-03-31 14:04:07.102 [main] Main - Sorted half array:
+[TRACE] 2021-03-31 14:04:07.102 [main] Main - 4
+[TRACE] 2021-03-31 14:04:07.102 [main] Main - 4 is less than 6
+[TRACE] 2021-03-31 14:04:07.102 [main] Main - Inserting 4 to sorted array
+[TRACE] 2021-03-31 14:04:07.102 [main] Main - Sorted array so far:
+[TRACE] 2021-03-31 14:04:07.102 [main] Main - 4
+[TRACE] 2021-03-31 14:04:07.102 [main] Main - 0
+[TRACE] 2021-03-31 14:04:07.102 [main] Main - 0
+[TRACE] 2021-03-31 14:04:07.102 [main] Main - Inserting 6 as other half finished
+[TRACE] 2021-03-31 14:04:07.102 [main] Main - Inserting 66 as other half finished
+[TRACE] 2021-03-31 14:04:07.103 [main] Main - Sorted half array:
+[TRACE] 2021-03-31 14:04:07.103 [main] Main - 4
+[TRACE] 2021-03-31 14:04:07.103 [main] Main - 6
+[TRACE] 2021-03-31 14:04:07.103 [main] Main - 66
+[TRACE] 2021-03-31 14:04:07.103 [main] Main - 1 is less than 4
+[TRACE] 2021-03-31 14:04:07.103 [main] Main - Inserting 1 to sorted array
+[TRACE] 2021-03-31 14:04:07.103 [main] Main - Sorted array so far:
+[TRACE] 2021-03-31 14:04:07.103 [main] Main - 1
+[TRACE] 2021-03-31 14:04:07.103 [main] Main - 0
+[TRACE] 2021-03-31 14:04:07.103 [main] Main - 0
+[TRACE] 2021-03-31 14:04:07.103 [main] Main - 0
+[TRACE] 2021-03-31 14:04:07.104 [main] Main - 0
+[TRACE] 2021-03-31 14:04:07.104 [main] Main - 0
+[TRACE] 2021-03-31 14:04:07.104 [main] Main - 0
+[TRACE] 2021-03-31 14:04:07.104 [main] Main - 3 is less than 4
+[TRACE] 2021-03-31 14:04:07.104 [main] Main - Inserting 3 to sorted array
+[TRACE] 2021-03-31 14:04:07.104 [main] Main - Sorted array so far:
+[TRACE] 2021-03-31 14:04:07.104 [main] Main - 1
+[TRACE] 2021-03-31 14:04:07.104 [main] Main - 3
+[TRACE] 2021-03-31 14:04:07.104 [main] Main - 0
+[TRACE] 2021-03-31 14:04:07.104 [main] Main - 0
+[TRACE] 2021-03-31 14:04:07.105 [main] Main - 0
+[TRACE] 2021-03-31 14:04:07.105 [main] Main - 0
+[TRACE] 2021-03-31 14:04:07.105 [main] Main - 0
+[TRACE] 2021-03-31 14:04:07.105 [main] Main - 4 is less than 7
+[TRACE] 2021-03-31 14:04:07.105 [main] Main - Inserting 4 to sorted array
+[TRACE] 2021-03-31 14:04:07.105 [main] Main - Sorted array so far:
+[TRACE] 2021-03-31 14:04:07.105 [main] Main - 1
+[TRACE] 2021-03-31 14:04:07.105 [main] Main - 3
+[TRACE] 2021-03-31 14:04:07.105 [main] Main - 4
+[TRACE] 2021-03-31 14:04:07.105 [main] Main - 0
+[TRACE] 2021-03-31 14:04:07.105 [main] Main - 0
+[TRACE] 2021-03-31 14:04:07.106 [main] Main - 0
+[TRACE] 2021-03-31 14:04:07.106 [main] Main - 0
+[TRACE] 2021-03-31 14:04:07.106 [main] Main - 6 is less than 7
+[TRACE] 2021-03-31 14:04:07.106 [main] Main - Inserting 6 to sorted array
+[TRACE] 2021-03-31 14:04:07.106 [main] Main - Sorted array so far:
+[TRACE] 2021-03-31 14:04:07.106 [main] Main - 1
+[TRACE] 2021-03-31 14:04:07.106 [main] Main - 3
+[TRACE] 2021-03-31 14:04:07.106 [main] Main - 4
+[TRACE] 2021-03-31 14:04:07.106 [main] Main - 6
+[TRACE] 2021-03-31 14:04:07.106 [main] Main - 0
+[TRACE] 2021-03-31 14:04:07.106 [main] Main - 0
+[TRACE] 2021-03-31 14:04:07.106 [main] Main - 0
+[TRACE] 2021-03-31 14:04:07.106 [main] Main - 7 is less than 66
+[TRACE] 2021-03-31 14:04:07.107 [main] Main - Inserting 7 to sorted array
+[TRACE] 2021-03-31 14:04:07.107 [main] Main - Sorted array so far:
+[TRACE] 2021-03-31 14:04:07.107 [main] Main - 1
+[TRACE] 2021-03-31 14:04:07.107 [main] Main - 3
+[TRACE] 2021-03-31 14:04:07.107 [main] Main - 4
+[TRACE] 2021-03-31 14:04:07.107 [main] Main - 6
+[TRACE] 2021-03-31 14:04:07.107 [main] Main - 7
+[TRACE] 2021-03-31 14:04:07.107 [main] Main - 0
+[TRACE] 2021-03-31 14:04:07.107 [main] Main - 0
+[TRACE] 2021-03-31 14:04:07.107 [main] Main - 45 is less than 66
+[TRACE] 2021-03-31 14:04:07.107 [main] Main - Inserting 45 to sorted array
+[TRACE] 2021-03-31 14:04:07.107 [main] Main - Sorted array so far:
+[TRACE] 2021-03-31 14:04:07.108 [main] Main - 1
+[TRACE] 2021-03-31 14:04:07.108 [main] Main - 3
+[TRACE] 2021-03-31 14:04:07.108 [main] Main - 4
+[TRACE] 2021-03-31 14:04:07.108 [main] Main - 6
+[TRACE] 2021-03-31 14:04:07.108 [main] Main - 7
+[TRACE] 2021-03-31 14:04:07.108 [main] Main - 45
+[TRACE] 2021-03-31 14:04:07.108 [main] Main - 0
+[TRACE] 2021-03-31 14:04:07.108 [main] Main - Inserting 66 as other half finished
+[TRACE] 2021-03-31 14:04:07.108 [main] Main - Sorted half array:
+[TRACE] 2021-03-31 14:04:07.108 [main] Main - 1
+[TRACE] 2021-03-31 14:04:07.108 [main] Main - 3
+[TRACE] 2021-03-31 14:04:07.108 [main] Main - 4
+[TRACE] 2021-03-31 14:04:07.109 [main] Main - 6
+[TRACE] 2021-03-31 14:04:07.109 [main] Main - 7
+[TRACE] 2021-03-31 14:04:07.109 [main] Main - 45
+[TRACE] 2021-03-31 14:04:07.109 [main] Main - 66
+[TRACE] 2021-03-31 14:04:07.109 [main] Main - Second array is split into indexes 7-13
+[TRACE] 2021-03-31 14:04:07.109 [main] Main - New midpoint is 67 at index 10
+[TRACE] 2021-03-31 14:04:07.109 [main] Main - First array is split into indexes 7-10
+[TRACE] 2021-03-31 14:04:07.109 [main] Main - New midpoint is 34 at index 8
+[TRACE] 2021-03-31 14:04:07.109 [main] Main - First array is split into indexes 7-8
+[TRACE] 2021-03-31 14:04:07.109 [main] Main - New midpoint is 3 at index 7
+[TRACE] 2021-03-31 14:04:07.109 [main] Main - First array is split into indexes 7-7
+[TRACE] 2021-03-31 14:04:07.110 [main] Main - New midpoint is 3 at index 7
+[TRACE] 2021-03-31 14:04:07.110 [main] Main - Inserting 3 as other half finished
+[TRACE] 2021-03-31 14:04:07.110 [main] Main - Sorted half array:
+[TRACE] 2021-03-31 14:04:07.110 [main] Main - 3
+[TRACE] 2021-03-31 14:04:07.110 [main] Main - Second array is split into indexes 8-8
+[TRACE] 2021-03-31 14:04:07.110 [main] Main - New midpoint is 34 at index 8
+[TRACE] 2021-03-31 14:04:07.110 [main] Main - Inserting 34 as other half finished
+[TRACE] 2021-03-31 14:04:07.110 [main] Main - Sorted half array:
+[TRACE] 2021-03-31 14:04:07.110 [main] Main - 34
+[TRACE] 2021-03-31 14:04:07.110 [main] Main - 3 is less than 34
+[TRACE] 2021-03-31 14:04:07.111 [main] Main - Inserting 3 to sorted array
+[TRACE] 2021-03-31 14:04:07.111 [main] Main - Sorted array so far:
+[TRACE] 2021-03-31 14:04:07.111 [main] Main - 3
+[TRACE] 2021-03-31 14:04:07.111 [main] Main - 0
+[TRACE] 2021-03-31 14:04:07.111 [main] Main - Inserting 34 as other half finished
+[TRACE] 2021-03-31 14:04:07.111 [main] Main - Sorted half array:
+[TRACE] 2021-03-31 14:04:07.111 [main] Main - 3
+[TRACE] 2021-03-31 14:04:07.111 [main] Main - 34
+[TRACE] 2021-03-31 14:04:07.111 [main] Main - Second array is split into indexes 9-10
+[TRACE] 2021-03-31 14:04:07.112 [main] Main - New midpoint is 5 at index 9
+[TRACE] 2021-03-31 14:04:07.112 [main] Main - First array is split into indexes 9-9
+[TRACE] 2021-03-31 14:04:07.112 [main] Main - New midpoint is 5 at index 9
+[TRACE] 2021-03-31 14:04:07.112 [main] Main - Inserting 5 as other half finished
+[TRACE] 2021-03-31 14:04:07.112 [main] Main - Sorted half array:
+[TRACE] 2021-03-31 14:04:07.112 [main] Main - 5
+[TRACE] 2021-03-31 14:04:07.112 [main] Main - Second array is split into indexes 10-10
+[TRACE] 2021-03-31 14:04:07.112 [main] Main - New midpoint is 67 at index 10
+[TRACE] 2021-03-31 14:04:07.112 [main] Main - Inserting 67 as other half finished
+[TRACE] 2021-03-31 14:04:07.112 [main] Main - Sorted half array:
+[TRACE] 2021-03-31 14:04:07.112 [main] Main - 67
+[TRACE] 2021-03-31 14:04:07.113 [main] Main - 5 is less than 67
+[TRACE] 2021-03-31 14:04:07.113 [main] Main - Inserting 5 to sorted array
+[TRACE] 2021-03-31 14:04:07.113 [main] Main - Sorted array so far:
+[TRACE] 2021-03-31 14:04:07.113 [main] Main - 5
+[TRACE] 2021-03-31 14:04:07.113 [main] Main - 0
+[TRACE] 2021-03-31 14:04:07.113 [main] Main - Inserting 67 as other half finished
+[TRACE] 2021-03-31 14:04:07.113 [main] Main - Sorted half array:
+[TRACE] 2021-03-31 14:04:07.113 [main] Main - 5
+[TRACE] 2021-03-31 14:04:07.114 [main] Main - 67
+[TRACE] 2021-03-31 14:04:07.114 [main] Main - 3 is less than 5
+[TRACE] 2021-03-31 14:04:07.114 [main] Main - Inserting 3 to sorted array
+[TRACE] 2021-03-31 14:04:07.114 [main] Main - Sorted array so far:
+[TRACE] 2021-03-31 14:04:07.114 [main] Main - 3
+[TRACE] 2021-03-31 14:04:07.114 [main] Main - 0
+[TRACE] 2021-03-31 14:04:07.114 [main] Main - 0
+[TRACE] 2021-03-31 14:04:07.114 [main] Main - 0
+[TRACE] 2021-03-31 14:04:07.114 [main] Main - 5 is less than 34
+[TRACE] 2021-03-31 14:04:07.114 [main] Main - Inserting 5 to sorted array
+[TRACE] 2021-03-31 14:04:07.114 [main] Main - Sorted array so far:
+[TRACE] 2021-03-31 14:04:07.114 [main] Main - 3
+[TRACE] 2021-03-31 14:04:07.114 [main] Main - 5
+[TRACE] 2021-03-31 14:04:07.114 [main] Main - 0
+[TRACE] 2021-03-31 14:04:07.114 [main] Main - 0
+[TRACE] 2021-03-31 14:04:07.115 [main] Main - 34 is less than 67
+[TRACE] 2021-03-31 14:04:07.115 [main] Main - Inserting 34 to sorted array
+[TRACE] 2021-03-31 14:04:07.115 [main] Main - Sorted array so far:
+[TRACE] 2021-03-31 14:04:07.115 [main] Main - 3
+[TRACE] 2021-03-31 14:04:07.115 [main] Main - 5
+[TRACE] 2021-03-31 14:04:07.115 [main] Main - 34
+[TRACE] 2021-03-31 14:04:07.115 [main] Main - 0
+[TRACE] 2021-03-31 14:04:07.115 [main] Main - Inserting 67 as other half finished
+[TRACE] 2021-03-31 14:04:07.115 [main] Main - Sorted half array:
+[TRACE] 2021-03-31 14:04:07.115 [main] Main - 3
+[TRACE] 2021-03-31 14:04:07.115 [main] Main - 5
+[TRACE] 2021-03-31 14:04:07.116 [main] Main - 34
+[TRACE] 2021-03-31 14:04:07.116 [main] Main - 67
+[TRACE] 2021-03-31 14:04:07.116 [main] Main - Second array is split into indexes 11-13
+[TRACE] 2021-03-31 14:04:07.116 [main] Main - New midpoint is 754 at index 12
+[TRACE] 2021-03-31 14:04:07.116 [main] Main - First array is split into indexes 11-12
+[TRACE] 2021-03-31 14:04:07.116 [main] Main - New midpoint is 7 at index 11
+[TRACE] 2021-03-31 14:04:07.116 [main] Main - First array is split into indexes 11-11
+[TRACE] 2021-03-31 14:04:07.117 [main] Main - New midpoint is 7 at index 11
+[TRACE] 2021-03-31 14:04:07.117 [main] Main - Inserting 7 as other half finished
+[TRACE] 2021-03-31 14:04:07.117 [main] Main - Sorted half array:
+[TRACE] 2021-03-31 14:04:07.117 [main] Main - 7
+[TRACE] 2021-03-31 14:04:07.117 [main] Main - Second array is split into indexes 12-12
+[TRACE] 2021-03-31 14:04:07.117 [main] Main - New midpoint is 754 at index 12
+[TRACE] 2021-03-31 14:04:07.117 [main] Main - Inserting 754 as other half finished
+[TRACE] 2021-03-31 14:04:07.118 [main] Main - Sorted half array:
+[TRACE] 2021-03-31 14:04:07.118 [main] Main - 754
+[TRACE] 2021-03-31 14:04:07.118 [main] Main - 7 is less than 754
+[TRACE] 2021-03-31 14:04:07.118 [main] Main - Inserting 7 to sorted array
+[TRACE] 2021-03-31 14:04:07.118 [main] Main - Sorted array so far:
+[TRACE] 2021-03-31 14:04:07.118 [main] Main - 7
+[TRACE] 2021-03-31 14:04:07.118 [main] Main - 0
+[TRACE] 2021-03-31 14:04:07.119 [main] Main - Inserting 754 as other half finished
+[TRACE] 2021-03-31 14:04:07.120 [main] Main - Sorted half array:
+[TRACE] 2021-03-31 14:04:07.120 [main] Main - 7
+[TRACE] 2021-03-31 14:04:07.120 [main] Main - 754
+[TRACE] 2021-03-31 14:04:07.120 [main] Main - Second array is split into indexes 13-13
+[TRACE] 2021-03-31 14:04:07.120 [main] Main - New midpoint is 345 at index 13
+[TRACE] 2021-03-31 14:04:07.120 [main] Main - Inserting 345 as other half finished
+[TRACE] 2021-03-31 14:04:07.120 [main] Main - Sorted half array:
+[TRACE] 2021-03-31 14:04:07.120 [main] Main - 345
+[TRACE] 2021-03-31 14:04:07.120 [main] Main - 7 is less than 345
+[TRACE] 2021-03-31 14:04:07.121 [main] Main - Inserting 7 to sorted array
+[TRACE] 2021-03-31 14:04:07.121 [main] Main - Sorted array so far:
+[TRACE] 2021-03-31 14:04:07.121 [main] Main - 7
+[TRACE] 2021-03-31 14:04:07.121 [main] Main - 0
+[TRACE] 2021-03-31 14:04:07.121 [main] Main - 0
+[TRACE] 2021-03-31 14:04:07.121 [main] Main - 345 is less than 754
+[TRACE] 2021-03-31 14:04:07.121 [main] Main - Inserting 345 to sorted array
+[TRACE] 2021-03-31 14:04:07.121 [main] Main - Sorted array so far:
+[TRACE] 2021-03-31 14:04:07.121 [main] Main - 7
+[TRACE] 2021-03-31 14:04:07.121 [main] Main - 345
+[TRACE] 2021-03-31 14:04:07.121 [main] Main - 0
+[TRACE] 2021-03-31 14:04:07.121 [main] Main - Inserting 754 as other half finished
+[TRACE] 2021-03-31 14:04:07.121 [main] Main - Sorted half array:
+[TRACE] 2021-03-31 14:04:07.122 [main] Main - 7
+[TRACE] 2021-03-31 14:04:07.122 [main] Main - 345
+[TRACE] 2021-03-31 14:04:07.122 [main] Main - 754
+[TRACE] 2021-03-31 14:04:07.122 [main] Main - 3 is less than 7
+[TRACE] 2021-03-31 14:04:07.122 [main] Main - Inserting 3 to sorted array
+[TRACE] 2021-03-31 14:04:07.122 [main] Main - Sorted array so far:
+[TRACE] 2021-03-31 14:04:07.122 [main] Main - 3
+[TRACE] 2021-03-31 14:04:07.122 [main] Main - 0
+[TRACE] 2021-03-31 14:04:07.122 [main] Main - 0
+[TRACE] 2021-03-31 14:04:07.122 [main] Main - 0
+[TRACE] 2021-03-31 14:04:07.122 [main] Main - 0
+[TRACE] 2021-03-31 14:04:07.122 [main] Main - 0
+[TRACE] 2021-03-31 14:04:07.122 [main] Main - 0
+[TRACE] 2021-03-31 14:04:07.122 [main] Main - 5 is less than 7
+[TRACE] 2021-03-31 14:04:07.123 [main] Main - Inserting 5 to sorted array
+[TRACE] 2021-03-31 14:04:07.123 [main] Main - Sorted array so far:
+[TRACE] 2021-03-31 14:04:07.123 [main] Main - 3
+[TRACE] 2021-03-31 14:04:07.123 [main] Main - 5
+[TRACE] 2021-03-31 14:04:07.123 [main] Main - 0
+[TRACE] 2021-03-31 14:04:07.123 [main] Main - 0
+[TRACE] 2021-03-31 14:04:07.123 [main] Main - 0
+[TRACE] 2021-03-31 14:04:07.123 [main] Main - 0
+[TRACE] 2021-03-31 14:04:07.123 [main] Main - 0
+[TRACE] 2021-03-31 14:04:07.123 [main] Main - 7 is less than 34
+[TRACE] 2021-03-31 14:04:07.124 [main] Main - Inserting 7 to sorted array
+[TRACE] 2021-03-31 14:04:07.124 [main] Main - Sorted array so far:
+[TRACE] 2021-03-31 14:04:07.124 [main] Main - 3
+[TRACE] 2021-03-31 14:04:07.124 [main] Main - 5
+[TRACE] 2021-03-31 14:04:07.124 [main] Main - 7
+[TRACE] 2021-03-31 14:04:07.124 [main] Main - 0
+[TRACE] 2021-03-31 14:04:07.124 [main] Main - 0
+[TRACE] 2021-03-31 14:04:07.124 [main] Main - 0
+[TRACE] 2021-03-31 14:04:07.124 [main] Main - 0
+[TRACE] 2021-03-31 14:04:07.124 [main] Main - 34 is less than 345
+[TRACE] 2021-03-31 14:04:07.124 [main] Main - Inserting 34 to sorted array
+[TRACE] 2021-03-31 14:04:07.124 [main] Main - Sorted array so far:
+[TRACE] 2021-03-31 14:04:07.125 [main] Main - 3
+[TRACE] 2021-03-31 14:04:07.125 [main] Main - 5
+[TRACE] 2021-03-31 14:04:07.125 [main] Main - 7
+[TRACE] 2021-03-31 14:04:07.125 [main] Main - 34
+[TRACE] 2021-03-31 14:04:07.125 [main] Main - 0
+[TRACE] 2021-03-31 14:04:07.125 [main] Main - 0
+[TRACE] 2021-03-31 14:04:07.125 [main] Main - 0
+[TRACE] 2021-03-31 14:04:07.125 [main] Main - 67 is less than 345
+[TRACE] 2021-03-31 14:04:07.125 [main] Main - Inserting 67 to sorted array
+[TRACE] 2021-03-31 14:04:07.125 [main] Main - Sorted array so far:
+[TRACE] 2021-03-31 14:04:07.125 [main] Main - 3
+[TRACE] 2021-03-31 14:04:07.125 [main] Main - 5
+[TRACE] 2021-03-31 14:04:07.125 [main] Main - 7
+[TRACE] 2021-03-31 14:04:07.126 [main] Main - 34
+[TRACE] 2021-03-31 14:04:07.126 [main] Main - 67
+[TRACE] 2021-03-31 14:04:07.126 [main] Main - 0
+[TRACE] 2021-03-31 14:04:07.126 [main] Main - 0
+[TRACE] 2021-03-31 14:04:07.126 [main] Main - Inserting 345 as other half finished
+[TRACE] 2021-03-31 14:04:07.126 [main] Main - Inserting 754 as other half finished
+[TRACE] 2021-03-31 14:04:07.126 [main] Main - Sorted half array:
+[TRACE] 2021-03-31 14:04:07.126 [main] Main - 3
+[TRACE] 2021-03-31 14:04:07.126 [main] Main - 5
+[TRACE] 2021-03-31 14:04:07.126 [main] Main - 7
+[TRACE] 2021-03-31 14:04:07.126 [main] Main - 34
+[TRACE] 2021-03-31 14:04:07.126 [main] Main - 67
+[TRACE] 2021-03-31 14:04:07.126 [main] Main - 345
+[TRACE] 2021-03-31 14:04:07.126 [main] Main - 754
+[TRACE] 2021-03-31 14:04:07.126 [main] Main - 1 is less than 3
+[TRACE] 2021-03-31 14:04:07.126 [main] Main - Inserting 1 to sorted array
+[TRACE] 2021-03-31 14:04:07.127 [main] Main - Sorted array so far:
+[TRACE] 2021-03-31 14:04:07.127 [main] Main - 1
+[TRACE] 2021-03-31 14:04:07.127 [main] Main - 0
+[TRACE] 2021-03-31 14:04:07.127 [main] Main - 0
+[TRACE] 2021-03-31 14:04:07.127 [main] Main - 0
+[TRACE] 2021-03-31 14:04:07.127 [main] Main - 0
+[TRACE] 2021-03-31 14:04:07.127 [main] Main - 0
+[TRACE] 2021-03-31 14:04:07.127 [main] Main - 0
+[TRACE] 2021-03-31 14:04:07.127 [main] Main - 0
+[TRACE] 2021-03-31 14:04:07.127 [main] Main - 0
+[TRACE] 2021-03-31 14:04:07.127 [main] Main - 0
+[TRACE] 2021-03-31 14:04:07.127 [main] Main - 0
+[TRACE] 2021-03-31 14:04:07.128 [main] Main - 0
+[TRACE] 2021-03-31 14:04:07.128 [main] Main - 0
+[TRACE] 2021-03-31 14:04:07.128 [main] Main - 0
+[TRACE] 2021-03-31 14:04:07.128 [main] Main - 3 is less than 3
+[TRACE] 2021-03-31 14:04:07.128 [main] Main - Inserting 3 to sorted array
+[TRACE] 2021-03-31 14:04:07.128 [main] Main - Sorted array so far:
+[TRACE] 2021-03-31 14:04:07.128 [main] Main - 1
+[TRACE] 2021-03-31 14:04:07.128 [main] Main - 3
+[TRACE] 2021-03-31 14:04:07.128 [main] Main - 0
+[TRACE] 2021-03-31 14:04:07.130 [main] Main - 0
+[TRACE] 2021-03-31 14:04:07.130 [main] Main - 0
+[TRACE] 2021-03-31 14:04:07.130 [main] Main - 0
+[TRACE] 2021-03-31 14:04:07.130 [main] Main - 0
+[TRACE] 2021-03-31 14:04:07.130 [main] Main - 0
+[TRACE] 2021-03-31 14:04:07.130 [main] Main - 0
+[TRACE] 2021-03-31 14:04:07.130 [main] Main - 0
+[TRACE] 2021-03-31 14:04:07.130 [main] Main - 0
+[TRACE] 2021-03-31 14:04:07.130 [main] Main - 0
+[TRACE] 2021-03-31 14:04:07.130 [main] Main - 0
+[TRACE] 2021-03-31 14:04:07.130 [main] Main - 0
+[TRACE] 2021-03-31 14:04:07.131 [main] Main - 3 is less than 5
+[TRACE] 2021-03-31 14:04:07.131 [main] Main - Inserting 3 to sorted array
+[TRACE] 2021-03-31 14:04:07.131 [main] Main - Sorted array so far:
+[TRACE] 2021-03-31 14:04:07.131 [main] Main - 1
+[TRACE] 2021-03-31 14:04:07.131 [main] Main - 3
+[TRACE] 2021-03-31 14:04:07.131 [main] Main - 3
+[TRACE] 2021-03-31 14:04:07.131 [main] Main - 0
+[TRACE] 2021-03-31 14:04:07.131 [main] Main - 0
+[TRACE] 2021-03-31 14:04:07.131 [main] Main - 0
+[TRACE] 2021-03-31 14:04:07.131 [main] Main - 0
+[TRACE] 2021-03-31 14:04:07.131 [main] Main - 0
+[TRACE] 2021-03-31 14:04:07.131 [main] Main - 0
+[TRACE] 2021-03-31 14:04:07.131 [main] Main - 0
+[TRACE] 2021-03-31 14:04:07.131 [main] Main - 0
+[TRACE] 2021-03-31 14:04:07.131 [main] Main - 0
+[TRACE] 2021-03-31 14:04:07.131 [main] Main - 0
+[TRACE] 2021-03-31 14:04:07.131 [main] Main - 0
+[TRACE] 2021-03-31 14:04:07.131 [main] Main - 4 is less than 5
+[TRACE] 2021-03-31 14:04:07.132 [main] Main - Inserting 4 to sorted array
+[TRACE] 2021-03-31 14:04:07.132 [main] Main - Sorted array so far:
+[TRACE] 2021-03-31 14:04:07.132 [main] Main - 1
+[TRACE] 2021-03-31 14:04:07.132 [main] Main - 3
+[TRACE] 2021-03-31 14:04:07.132 [main] Main - 3
+[TRACE] 2021-03-31 14:04:07.132 [main] Main - 4
+[TRACE] 2021-03-31 14:04:07.132 [main] Main - 0
+[TRACE] 2021-03-31 14:04:07.132 [main] Main - 0
+[TRACE] 2021-03-31 14:04:07.132 [main] Main - 0
+[TRACE] 2021-03-31 14:04:07.132 [main] Main - 0
+[TRACE] 2021-03-31 14:04:07.132 [main] Main - 0
+[TRACE] 2021-03-31 14:04:07.132 [main] Main - 0
+[TRACE] 2021-03-31 14:04:07.132 [main] Main - 0
+[TRACE] 2021-03-31 14:04:07.132 [main] Main - 0
+[TRACE] 2021-03-31 14:04:07.132 [main] Main - 0
+[TRACE] 2021-03-31 14:04:07.132 [main] Main - 0
+[TRACE] 2021-03-31 14:04:07.133 [main] Main - 5 is less than 6
+[TRACE] 2021-03-31 14:04:07.133 [main] Main - Inserting 5 to sorted array
+[TRACE] 2021-03-31 14:04:07.133 [main] Main - Sorted array so far:
+[TRACE] 2021-03-31 14:04:07.133 [main] Main - 1
+[TRACE] 2021-03-31 14:04:07.133 [main] Main - 3
+[TRACE] 2021-03-31 14:04:07.133 [main] Main - 3
+[TRACE] 2021-03-31 14:04:07.133 [main] Main - 4
+[TRACE] 2021-03-31 14:04:07.133 [main] Main - 5
+[TRACE] 2021-03-31 14:04:07.133 [main] Main - 0
+[TRACE] 2021-03-31 14:04:07.133 [main] Main - 0
+[TRACE] 2021-03-31 14:04:07.134 [main] Main - 0
+[TRACE] 2021-03-31 14:04:07.134 [main] Main - 0
+[TRACE] 2021-03-31 14:04:07.134 [main] Main - 0
+[TRACE] 2021-03-31 14:04:07.134 [main] Main - 0
+[TRACE] 2021-03-31 14:04:07.134 [main] Main - 0
+[TRACE] 2021-03-31 14:04:07.134 [main] Main - 0
+[TRACE] 2021-03-31 14:04:07.134 [main] Main - 0
+[TRACE] 2021-03-31 14:04:07.134 [main] Main - 6 is less than 7
+[TRACE] 2021-03-31 14:04:07.134 [main] Main - Inserting 6 to sorted array
+[TRACE] 2021-03-31 14:04:07.134 [main] Main - Sorted array so far:
+[TRACE] 2021-03-31 14:04:07.134 [main] Main - 1
+[TRACE] 2021-03-31 14:04:07.134 [main] Main - 3
+[TRACE] 2021-03-31 14:04:07.134 [main] Main - 3
+[TRACE] 2021-03-31 14:04:07.134 [main] Main - 4
+[TRACE] 2021-03-31 14:04:07.135 [main] Main - 5
+[TRACE] 2021-03-31 14:04:07.135 [main] Main - 6
+[TRACE] 2021-03-31 14:04:07.135 [main] Main - 0
+[TRACE] 2021-03-31 14:04:07.135 [main] Main - 0
+[TRACE] 2021-03-31 14:04:07.135 [main] Main - 0
+[TRACE] 2021-03-31 14:04:07.135 [main] Main - 0
+[TRACE] 2021-03-31 14:04:07.135 [main] Main - 0
+[TRACE] 2021-03-31 14:04:07.135 [main] Main - 0
+[TRACE] 2021-03-31 14:04:07.135 [main] Main - 0
+[TRACE] 2021-03-31 14:04:07.135 [main] Main - 0
+[TRACE] 2021-03-31 14:04:07.135 [main] Main - 7 is less than 7
+[TRACE] 2021-03-31 14:04:07.135 [main] Main - Inserting 7 to sorted array
+[TRACE] 2021-03-31 14:04:07.135 [main] Main - Sorted array so far:
+[TRACE] 2021-03-31 14:04:07.135 [main] Main - 1
+[TRACE] 2021-03-31 14:04:07.135 [main] Main - 3
+[TRACE] 2021-03-31 14:04:07.135 [main] Main - 3
+[TRACE] 2021-03-31 14:04:07.135 [main] Main - 4
+[TRACE] 2021-03-31 14:04:07.135 [main] Main - 5
+[TRACE] 2021-03-31 14:04:07.135 [main] Main - 6
+[TRACE] 2021-03-31 14:04:07.135 [main] Main - 7
+[TRACE] 2021-03-31 14:04:07.135 [main] Main - 0
+[TRACE] 2021-03-31 14:04:07.135 [main] Main - 0
+[TRACE] 2021-03-31 14:04:07.135 [main] Main - 0
+[TRACE] 2021-03-31 14:04:07.136 [main] Main - 0
+[TRACE] 2021-03-31 14:04:07.136 [main] Main - 0
+[TRACE] 2021-03-31 14:04:07.136 [main] Main - 0
+[TRACE] 2021-03-31 14:04:07.136 [main] Main - 0
+[TRACE] 2021-03-31 14:04:07.136 [main] Main - 7 is less than 34
+[TRACE] 2021-03-31 14:04:07.136 [main] Main - Inserting 7 to sorted array
+[TRACE] 2021-03-31 14:04:07.136 [main] Main - Sorted array so far:
+[TRACE] 2021-03-31 14:04:07.136 [main] Main - 1
+[TRACE] 2021-03-31 14:04:07.136 [main] Main - 3
+[TRACE] 2021-03-31 14:04:07.136 [main] Main - 3
+[TRACE] 2021-03-31 14:04:07.136 [main] Main - 4
+[TRACE] 2021-03-31 14:04:07.136 [main] Main - 5
+[TRACE] 2021-03-31 14:04:07.136 [main] Main - 6
+[TRACE] 2021-03-31 14:04:07.136 [main] Main - 7
+[TRACE] 2021-03-31 14:04:07.136 [main] Main - 7
+[TRACE] 2021-03-31 14:04:07.136 [main] Main - 0
+[TRACE] 2021-03-31 14:04:07.137 [main] Main - 0
+[TRACE] 2021-03-31 14:04:07.137 [main] Main - 0
+[TRACE] 2021-03-31 14:04:07.137 [main] Main - 0
+[TRACE] 2021-03-31 14:04:07.137 [main] Main - 0
+[TRACE] 2021-03-31 14:04:07.137 [main] Main - 0
+[TRACE] 2021-03-31 14:04:07.137 [main] Main - 34 is less than 45
+[TRACE] 2021-03-31 14:04:07.137 [main] Main - Inserting 34 to sorted array
+[TRACE] 2021-03-31 14:04:07.137 [main] Main - Sorted array so far:
+[TRACE] 2021-03-31 14:04:07.137 [main] Main - 1
+[TRACE] 2021-03-31 14:04:07.137 [main] Main - 3
+[TRACE] 2021-03-31 14:04:07.137 [main] Main - 3
+[TRACE] 2021-03-31 14:04:07.137 [main] Main - 4
+[TRACE] 2021-03-31 14:04:07.137 [main] Main - 5
+[TRACE] 2021-03-31 14:04:07.137 [main] Main - 6
+[TRACE] 2021-03-31 14:04:07.137 [main] Main - 7
+[TRACE] 2021-03-31 14:04:07.137 [main] Main - 7
+[TRACE] 2021-03-31 14:04:07.137 [main] Main - 34
+[TRACE] 2021-03-31 14:04:07.137 [main] Main - 0
+[TRACE] 2021-03-31 14:04:07.138 [main] Main - 0
+[TRACE] 2021-03-31 14:04:07.138 [main] Main - 0
+[TRACE] 2021-03-31 14:04:07.138 [main] Main - 0
+[TRACE] 2021-03-31 14:04:07.138 [main] Main - 0
+[TRACE] 2021-03-31 14:04:07.138 [main] Main - 45 is less than 67
+[TRACE] 2021-03-31 14:04:07.138 [main] Main - Inserting 45 to sorted array
+[TRACE] 2021-03-31 14:04:07.138 [main] Main - Sorted array so far:
+[TRACE] 2021-03-31 14:04:07.138 [main] Main - 1
+[TRACE] 2021-03-31 14:04:07.138 [main] Main - 3
+[TRACE] 2021-03-31 14:04:07.138 [main] Main - 3
+[TRACE] 2021-03-31 14:04:07.138 [main] Main - 4
+[TRACE] 2021-03-31 14:04:07.138 [main] Main - 5
+[TRACE] 2021-03-31 14:04:07.138 [main] Main - 6
+[TRACE] 2021-03-31 14:04:07.138 [main] Main - 7
+[TRACE] 2021-03-31 14:04:07.138 [main] Main - 7
+[TRACE] 2021-03-31 14:04:07.138 [main] Main - 34
+[TRACE] 2021-03-31 14:04:07.138 [main] Main - 45
+[TRACE] 2021-03-31 14:04:07.138 [main] Main - 0
+[TRACE] 2021-03-31 14:04:07.138 [main] Main - 0
+[TRACE] 2021-03-31 14:04:07.139 [main] Main - 0
+[TRACE] 2021-03-31 14:04:07.139 [main] Main - 0
+[TRACE] 2021-03-31 14:04:07.139 [main] Main - 66 is less than 67
+[TRACE] 2021-03-31 14:04:07.139 [main] Main - Inserting 66 to sorted array
+[TRACE] 2021-03-31 14:04:07.139 [main] Main - Sorted array so far:
+[TRACE] 2021-03-31 14:04:07.139 [main] Main - 1
+[TRACE] 2021-03-31 14:04:07.139 [main] Main - 3
+[TRACE] 2021-03-31 14:04:07.139 [main] Main - 3
+[TRACE] 2021-03-31 14:04:07.139 [main] Main - 4
+[TRACE] 2021-03-31 14:04:07.139 [main] Main - 5
+[TRACE] 2021-03-31 14:04:07.139 [main] Main - 6
+[TRACE] 2021-03-31 14:04:07.139 [main] Main - 7
+[TRACE] 2021-03-31 14:04:07.139 [main] Main - 7
+[TRACE] 2021-03-31 14:04:07.139 [main] Main - 34
+[TRACE] 2021-03-31 14:04:07.139 [main] Main - 45
+[TRACE] 2021-03-31 14:04:07.139 [main] Main - 66
+[TRACE] 2021-03-31 14:04:07.140 [main] Main - 0
+[TRACE] 2021-03-31 14:04:07.140 [main] Main - 0
+[TRACE] 2021-03-31 14:04:07.140 [main] Main - 0
+[TRACE] 2021-03-31 14:04:07.140 [main] Main - Inserting 67 as other half finished
+[TRACE] 2021-03-31 14:04:07.140 [main] Main - Inserting 345 as other half finished
+[TRACE] 2021-03-31 14:04:07.140 [main] Main - Inserting 754 as other half finished
+[TRACE] 2021-03-31 14:04:07.140 [main] Main - Sorted half array:
+[TRACE] 2021-03-31 14:04:07.140 [main] Main - 1
+[TRACE] 2021-03-31 14:04:07.140 [main] Main - 3
+[TRACE] 2021-03-31 14:04:07.140 [main] Main - 3
+[TRACE] 2021-03-31 14:04:07.140 [main] Main - 4
+[TRACE] 2021-03-31 14:04:07.141 [main] Main - 5
+[TRACE] 2021-03-31 14:04:07.141 [main] Main - 6
+[TRACE] 2021-03-31 14:04:07.141 [main] Main - 7
+[TRACE] 2021-03-31 14:04:07.141 [main] Main - 7
+[TRACE] 2021-03-31 14:04:07.141 [main] Main - 34
+[TRACE] 2021-03-31 14:04:07.141 [main] Main - 45
+[TRACE] 2021-03-31 14:04:07.141 [main] Main - 66
+[TRACE] 2021-03-31 14:04:07.141 [main] Main - 67
+[TRACE] 2021-03-31 14:04:07.141 [main] Main - 345
+[TRACE] 2021-03-31 14:04:07.141 [main] Main - 754
