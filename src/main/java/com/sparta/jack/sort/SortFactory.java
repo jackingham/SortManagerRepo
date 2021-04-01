@@ -10,12 +10,13 @@ public class SortFactory {
         Sorter sorter = null;
         switch (sortType) {
             case BUBBLE:
-                sorter = new BubbleSort();
+                sorter = BubbleSort.getInstance();
                 break;
             case MERGE:
-                sorter = new MergeSort();
+                sorter = MergeSort.getInstance();
                 break;
             case BINARY:
+                //sorter = BinarySort.getInstance();
                 break;
             default:
                 sorter = null;
