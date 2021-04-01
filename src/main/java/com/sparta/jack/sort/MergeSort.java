@@ -13,7 +13,9 @@ public class MergeSort implements Sorter {
     }
 
     public int[] sortArray(int[] numberArray) throws ArrayTooSmallException {
-        if (numberArray.length == 0 || numberArray.length == 1) {
+        if (numberArray == null) {
+            throw new NullPointerException("Array is null!");
+        } else if (numberArray.length == 0 || numberArray.length == 1) {
             throw new ArrayTooSmallException("Array too small!");
         } else {
             merge(numberArray, 0, numberArray.length-1);

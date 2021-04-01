@@ -14,8 +14,10 @@ public class BubbleSort implements Sorter {
     }
 
 
-    public int[] sortArray(int[] numberArray) throws ArrayTooSmallException {
-        if (numberArray.length == 0 || numberArray.length == 1) {
+    public int[] sortArray(int[] numberArray) throws ArrayTooSmallException, NullPointerException {
+        if (numberArray == null) {
+            throw new NullPointerException("Array is null!");
+        } else if (numberArray.length == 0 || numberArray.length == 1) {
             throw new ArrayTooSmallException("Array too small!");
         } else {
            // int passes = 0, swaps = 0;

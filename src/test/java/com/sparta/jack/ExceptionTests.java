@@ -77,7 +77,7 @@ public class ExceptionTests {
         Exception e = assertThrows(NullPointerException.class, () -> {
             bubbleSorter.sortArray(emptyArray);
         });
-        String expectedMessage = "Array too small!";
+        String expectedMessage = "Array is null!";
         String actualMessage = e.getMessage();
         assertTrue(actualMessage.contains(expectedMessage));
     }
@@ -89,7 +89,7 @@ public class ExceptionTests {
         Exception e = assertThrows(NullPointerException.class, () -> {
             mergeSorter.sortArray(emptyArray);
         });
-        String expectedMessage = "Array too small!";
+        String expectedMessage = "Array is null!";
         String actualMessage = e.getMessage();
         assertTrue(actualMessage.contains(expectedMessage));
     }
