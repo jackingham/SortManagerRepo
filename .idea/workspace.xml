@@ -22,13 +22,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="07532167-e533-4e61-aed9-c279a29fccbf" name="Default Changelist" comment="Made sort classes singletons and refactored accordingly. Added a number of exception and performace tests">
+    <list default="true" id="07532167-e533-4e61-aed9-c279a29fccbf" name="Default Changelist" comment="Fixed null checking from behaviour indicated by added test">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/jack/sort/BubbleSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/jack/sort/BubbleSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/jack/sort/MergeSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/jack/sort/MergeSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/sparta/jack/ExceptionTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/sparta/jack/ExceptionTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/sparta/jack/sort/BubbleSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sparta/jack/sort/BubbleSort.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/sparta/jack/sort/MergeSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sparta/jack/sort/MergeSort.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/jack/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/jack/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/sparta/jack/FunctionalTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/sparta/jack/FunctionalTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +67,7 @@
       <recent name="D:\Users\Jack\Documents\Sparta\engineering82\SortManagerProject\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ExceptionTests.testNullArray_bubble">
+  <component name="RunManager" selected="JUnit.FunctionalTests">
     <configuration name="ExceptionTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SortManagerProject" />
       <extension name="coverage">
@@ -82,22 +79,6 @@
       <option name="PACKAGE_NAME" value="com.sparta.jack" />
       <option name="MAIN_CLASS_NAME" value="com.sparta.jack.ExceptionTests" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ExceptionTests.testEmptyArray_merge" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SortManagerProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.sparta.jack.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.sparta.jack" />
-      <option name="MAIN_CLASS_NAME" value="com.sparta.jack.ExceptionTests" />
-      <option name="METHOD_NAME" value="testEmptyArray_merge" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -134,7 +115,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ExceptionTests.testShortArray_bub" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="FunctionalTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SortManagerProject" />
       <extension name="coverage">
         <pattern>
@@ -143,8 +124,23 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.sparta.jack" />
-      <option name="MAIN_CLASS_NAME" value="com.sparta.jack.ExceptionTests" />
-      <option name="METHOD_NAME" value="testShortArray_bub" />
+      <option name="MAIN_CLASS_NAME" value="com.sparta.jack.FunctionalTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FunctionalTests.testBubbleSort" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SortManagerProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.sparta.jack.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.sparta.jack" />
+      <option name="MAIN_CLASS_NAME" value="com.sparta.jack.FunctionalTests" />
+      <option name="METHOD_NAME" value="testBubbleSort" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -152,11 +148,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.FunctionalTests" />
+        <item itemvalue="JUnit.FunctionalTests.testBubbleSort" />
+        <item itemvalue="JUnit.ExceptionTests" />
         <item itemvalue="JUnit.ExceptionTests.testNullArray_bubble" />
         <item itemvalue="JUnit.ExceptionTests.testNullArray_merge" />
-        <item itemvalue="JUnit.ExceptionTests" />
-        <item itemvalue="JUnit.ExceptionTests.testShortArray_bub" />
-        <item itemvalue="JUnit.ExceptionTests.testEmptyArray_merge" />
       </list>
     </recent_temporary>
   </component>
@@ -183,7 +179,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617274224262</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Fixed null checking from behaviour indicated by added test">
+      <created>1617274462470</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1617274462470</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -201,7 +204,9 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added SortFactory class" />
     <MESSAGE value="Made sort classes singletons and refactored accordingly. Added a number of exception and performace tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="Made sort classes singletons and refactored accordingly. Added a number of exception and performace tests" />
+    <MESSAGE value="Fixed null checking" />
+    <MESSAGE value="Fixed null checking from behaviour indicated by added test" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed null checking from behaviour indicated by added test" />
   </component>
   <component name="WindowStateProjectService">
     <state x="666" y="290" key="#Log_Highlighting_(ideolog)" timestamp="1617200755609">
@@ -228,26 +233,26 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040/-1600.596.1600.860@0.0.1920.1040" timestamp="1617225336437" />
-    <state width="1877" height="280" key="GridCell.Tab.0.bottom" timestamp="1617274411858">
+    <state width="1877" height="280" key="GridCell.Tab.0.bottom" timestamp="1617274524607">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1557" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1600.596.1600.860@-1600.596.1600.860" timestamp="1617108268528" />
-    <state width="1877" height="280" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1600.596.1600.860@0.0.1920.1040" timestamp="1617274411858" />
-    <state width="1877" height="280" key="GridCell.Tab.0.center" timestamp="1617274411857">
+    <state width="1877" height="280" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1600.596.1600.860@0.0.1920.1040" timestamp="1617274524607" />
+    <state width="1877" height="280" key="GridCell.Tab.0.center" timestamp="1617274524607">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1557" height="281" key="GridCell.Tab.0.center/0.0.1920.1040/-1600.596.1600.860@-1600.596.1600.860" timestamp="1617108268528" />
-    <state width="1877" height="280" key="GridCell.Tab.0.center/0.0.1920.1040/-1600.596.1600.860@0.0.1920.1040" timestamp="1617274411857" />
-    <state width="1877" height="280" key="GridCell.Tab.0.left" timestamp="1617274411857">
+    <state width="1877" height="280" key="GridCell.Tab.0.center/0.0.1920.1040/-1600.596.1600.860@0.0.1920.1040" timestamp="1617274524607" />
+    <state width="1877" height="280" key="GridCell.Tab.0.left" timestamp="1617274524607">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1557" height="281" key="GridCell.Tab.0.left/0.0.1920.1040/-1600.596.1600.860@-1600.596.1600.860" timestamp="1617108268528" />
-    <state width="1877" height="280" key="GridCell.Tab.0.left/0.0.1920.1040/-1600.596.1600.860@0.0.1920.1040" timestamp="1617274411857" />
-    <state width="1877" height="280" key="GridCell.Tab.0.right" timestamp="1617274411857">
+    <state width="1877" height="280" key="GridCell.Tab.0.left/0.0.1920.1040/-1600.596.1600.860@0.0.1920.1040" timestamp="1617274524607" />
+    <state width="1877" height="280" key="GridCell.Tab.0.right" timestamp="1617274524607">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1557" height="281" key="GridCell.Tab.0.right/0.0.1920.1040/-1600.596.1600.860@-1600.596.1600.860" timestamp="1617108268528" />
-    <state width="1877" height="280" key="GridCell.Tab.0.right/0.0.1920.1040/-1600.596.1600.860@0.0.1920.1040" timestamp="1617274411857" />
+    <state width="1877" height="280" key="GridCell.Tab.0.right/0.0.1920.1040/-1600.596.1600.860@0.0.1920.1040" timestamp="1617274524607" />
     <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1617229109239">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -264,10 +269,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040/-1600.596.1600.860@0.0.1920.1040" timestamp="1617229109239" />
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1617274226837">
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1617274479808">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1600.596.1600.860@0.0.1920.1040" timestamp="1617274226837" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1600.596.1600.860@0.0.1920.1040" timestamp="1617274479808" />
     <state x="342" y="140" key="new project wizard" timestamp="1617184825868">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
