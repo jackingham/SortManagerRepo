@@ -11,6 +11,7 @@ import com.sparta.jack.utilities.Timer;
 public class PerformanceTests {
     static Sorter bubbleSorter;
     static Sorter mergeSorter;
+    static Sorter binarySorter;
 
     static int[] testArray1;
     static int[] testArray2;
@@ -22,6 +23,7 @@ public class PerformanceTests {
         SortFactory sortFactory = new SortFactory();
         bubbleSorter = sortFactory.getSorter(SortTypes.BUBBLE);
         mergeSorter = sortFactory.getSorter(SortTypes.MERGE);
+        binarySorter = sortFactory.getSorter(SortTypes.BINARY);
 
         Random generator = new Random();
         int[] testArraySizes = {100,1000,10000};
@@ -52,8 +54,13 @@ public class PerformanceTests {
         mergeSorter.sortArray(testArray1);
         double mergeSortTime = Timer.stopTimerAndGetTime();
 
-        Main.logger.info("Bubble sort time:" +bubbleSortTime);
-        Main.logger.info("Merge sort time:" +mergeSortTime);
+        Timer.startTimer();
+        binarySorter.sortArray(testArray1);
+        double binarySortTime = Timer.stopTimerAndGetTime();
+
+        Main.logger.info("Bubble sort time (small):" +bubbleSortTime);
+        Main.logger.info("Merge sort time (small):" +mergeSortTime);
+        Main.logger.info("Binary sort time (small):" +binarySortTime);
     }
 
     @Test
@@ -67,8 +74,13 @@ public class PerformanceTests {
         mergeSorter.sortArray(testArray2);
         double mergeSortTime = Timer.stopTimerAndGetTime();
 
-        Main.logger.info("Bubble sort time:" +bubbleSortTime);
-        Main.logger.info("Merge sort time:" +mergeSortTime);
+        Timer.startTimer();
+        binarySorter.sortArray(testArray2);
+        double binarySortTime = Timer.stopTimerAndGetTime();
+
+        Main.logger.info("Bubble sort time (medium):" +bubbleSortTime);
+        Main.logger.info("Merge sort time (medium):" +mergeSortTime);
+        Main.logger.info("Binary sort time (medium):" +binarySortTime);
     }
 
     @Test
@@ -82,7 +94,12 @@ public class PerformanceTests {
         mergeSorter.sortArray(testArray3);
         double mergeSortTime = Timer.stopTimerAndGetTime();
 
-        Main.logger.info("Bubble sort time:" +bubbleSortTime);
-        Main.logger.info("Merge sort time:" +mergeSortTime);
+        Timer.startTimer();
+        binarySorter.sortArray(testArray3);
+        double binarySortTime = Timer.stopTimerAndGetTime();
+
+        Main.logger.info("Bubble sort time (large):" +bubbleSortTime);
+        Main.logger.info("Merge sort time: (large)" +mergeSortTime);
+        Main.logger.info("Binary sort time: (large)" +binarySortTime);
     }
 }

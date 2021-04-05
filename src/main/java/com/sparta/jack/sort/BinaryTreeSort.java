@@ -10,9 +10,6 @@ public class BinaryTreeSort implements BinaryTree {
     int numberOfElements = 0;
     Node root;
 
-    int ascendingElementCount = 0;
-    int[] sortedArray;
-
     public int getRootElement() {
         return root.value;
     }
@@ -96,10 +93,25 @@ public class BinaryTreeSort implements BinaryTree {
 
     }
 
+    int ascendingElementIndex;
+    int[] ascendingArray;
 
     public int[] getSortedTreeAsc() {
-        return new int[0];
+        ascendingArray = new int[getNumberOfElements()];
+        ascendingElementIndex = 0;
+        traverseAsc(root);
+        return ascendingArray;
     }
+
+    private void traverseAsc(Node node){
+        if (node != null) {
+            traverseAsc(node.left);
+            ascendingArray[ascendingElementIndex++] = node.value;
+            traverseAsc(node.right);
+        }
+
+    }
+
 
     public int[] getSortedTreeDesc() {
         return new int[0];

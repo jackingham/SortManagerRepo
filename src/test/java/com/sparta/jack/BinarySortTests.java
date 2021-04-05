@@ -37,6 +37,12 @@ public class BinarySortTests {  //n.b the tests for binary tree (sort) are more 
         assertFalse(bt.findElement(6));
     }
 
+    @Test
+    @DisplayName("Tests array is sorted")
+    public void binaryTreeSortTest(){
+        assertArrayEquals(new int[]{1,2,3,4,5}, bt.getSortedTreeAsc());
+    }
+
 
 }
 

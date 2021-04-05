@@ -21,7 +21,7 @@ public class BinarySortInitialiser implements Sorter {
             BinaryTreeSort bt = new BinaryTreeSort();
             bt.setRootElement(numberArray[0]);
             bt.addElements(numberArray);
-            return numberArray;
+            return bt.getSortedTreeAsc();
         }
     }
 }

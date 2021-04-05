@@ -22,18 +22,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="07532167-e533-4e61-aed9-c279a29fccbf" name="Default Changelist" comment="Added basic functional tests for merge and bubble sort">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/sparta/jack/sort/BinarySortInitialiser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/sparta/jack/sort/BinaryTreeSort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/sparta/jack/BinarySortTests.java" afterDir="false" />
+    <list default="true" id="07532167-e533-4e61-aed9-c279a29fccbf" name="Default Changelist" comment="Restructured BinaryTreeSort into 2 distinct classes as methods were proving inacessible during testing phases due to use of factory. Added some (successful) tests for constructing the binary tree.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/logFile.log" beforeDir="false" afterPath="$PROJECT_DIR$/resources/logFile.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/jack/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/jack/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/jack/sort/SortFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/jack/sort/SortFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/sparta/jack/ExceptionTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/sparta/jack/ExceptionTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/sparta/jack/FunctionalTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/sparta/jack/FunctionalTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/sparta/jack/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sparta/jack/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/sparta/jack/sort/SortFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sparta/jack/sort/SortFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/jack/sort/BinarySortInitialiser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/jack/sort/BinarySortInitialiser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/jack/sort/BinaryTreeSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/jack/sort/BinaryTreeSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/sparta/jack/BinarySortTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/sparta/jack/BinarySortTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/sparta/jack/PerformanceTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/sparta/jack/PerformanceTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/logFile.log" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/logFile.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -76,7 +71,7 @@
       <recent name="D:\Users\Jack\Documents\Sparta\engineering82\SortManagerProject\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.BinarySortTests">
+  <component name="RunManager" selected="JUnit.PerformanceTests">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.sparta.jack.Main" />
       <module name="SortManagerProject" />
@@ -120,7 +115,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FunctionalTests.testTreeBuild" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PerformanceTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SortManagerProject" />
       <extension name="coverage">
         <pattern>
@@ -129,14 +124,13 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.sparta.jack" />
-      <option name="MAIN_CLASS_NAME" value="com.sparta.jack.FunctionalTests" />
-      <option name="METHOD_NAME" value="testTreeBuild" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="MAIN_CLASS_NAME" value="com.sparta.jack.PerformanceTests" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FunctionalTests.testTreeSort" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PerformanceTests.testArray1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SortManagerProject" />
       <extension name="coverage">
         <pattern>
@@ -145,8 +139,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.sparta.jack" />
-      <option name="MAIN_CLASS_NAME" value="com.sparta.jack.FunctionalTests" />
-      <option name="METHOD_NAME" value="testTreeSort" />
+      <option name="MAIN_CLASS_NAME" value="com.sparta.jack.PerformanceTests" />
+      <option name="METHOD_NAME" value="testArray1" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -154,11 +148,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.PerformanceTests" />
+        <item itemvalue="JUnit.PerformanceTests.testArray1" />
         <item itemvalue="JUnit.BinarySortTests" />
         <item itemvalue="JUnit.FunctionalTests" />
         <item itemvalue="Application.Main" />
-        <item itemvalue="JUnit.FunctionalTests.testTreeBuild" />
-        <item itemvalue="JUnit.FunctionalTests.testTreeSort" />
       </list>
     </recent_temporary>
   </component>
@@ -199,7 +193,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617275114927</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Restructured BinaryTreeSort into 2 distinct classes as methods were proving inacessible during testing phases due to use of factory. Added some (successful) tests for constructing the binary tree.">
+      <created>1617649913703</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1617649913703</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -220,7 +221,8 @@
     <MESSAGE value="Fixed null checking" />
     <MESSAGE value="Fixed null checking from behaviour indicated by added test" />
     <MESSAGE value="Added basic functional tests for merge and bubble sort" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added basic functional tests for merge and bubble sort" />
+    <MESSAGE value="Restructured BinaryTreeSort into 2 distinct classes as methods were proving inacessible during testing phases due to use of factory. Added some (successful) tests for constructing the binary tree." />
+    <option name="LAST_COMMIT_MESSAGE" value="Restructured BinaryTreeSort into 2 distinct classes as methods were proving inacessible during testing phases due to use of factory. Added some (successful) tests for constructing the binary tree." />
   </component>
   <component name="WindowStateProjectService">
     <state x="666" y="290" key="#Log_Highlighting_(ideolog)" timestamp="1617200755609">
@@ -259,26 +261,26 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040/-1600.596.1600.860@0.0.1920.1040" timestamp="1617225336437" />
-    <state width="1877" height="280" key="GridCell.Tab.0.bottom" timestamp="1617649605982">
+    <state width="1877" height="280" key="GridCell.Tab.0.bottom" timestamp="1617664732215">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1557" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1600.596.1600.860@-1600.596.1600.860" timestamp="1617108268528" />
-    <state width="1877" height="280" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1600.596.1600.860@0.0.1920.1040" timestamp="1617649605982" />
-    <state width="1877" height="280" key="GridCell.Tab.0.center" timestamp="1617649605982">
+    <state width="1877" height="280" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1600.596.1600.860@0.0.1920.1040" timestamp="1617664732215" />
+    <state width="1877" height="280" key="GridCell.Tab.0.center" timestamp="1617664732214">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1557" height="281" key="GridCell.Tab.0.center/0.0.1920.1040/-1600.596.1600.860@-1600.596.1600.860" timestamp="1617108268528" />
-    <state width="1877" height="280" key="GridCell.Tab.0.center/0.0.1920.1040/-1600.596.1600.860@0.0.1920.1040" timestamp="1617649605982" />
-    <state width="1877" height="280" key="GridCell.Tab.0.left" timestamp="1617649605982">
+    <state width="1877" height="280" key="GridCell.Tab.0.center/0.0.1920.1040/-1600.596.1600.860@0.0.1920.1040" timestamp="1617664732214" />
+    <state width="1877" height="280" key="GridCell.Tab.0.left" timestamp="1617664732214">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1557" height="281" key="GridCell.Tab.0.left/0.0.1920.1040/-1600.596.1600.860@-1600.596.1600.860" timestamp="1617108268528" />
-    <state width="1877" height="280" key="GridCell.Tab.0.left/0.0.1920.1040/-1600.596.1600.860@0.0.1920.1040" timestamp="1617649605982" />
-    <state width="1877" height="280" key="GridCell.Tab.0.right" timestamp="1617649605982">
+    <state width="1877" height="280" key="GridCell.Tab.0.left/0.0.1920.1040/-1600.596.1600.860@0.0.1920.1040" timestamp="1617664732214" />
+    <state width="1877" height="280" key="GridCell.Tab.0.right" timestamp="1617664732215">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1557" height="281" key="GridCell.Tab.0.right/0.0.1920.1040/-1600.596.1600.860@-1600.596.1600.860" timestamp="1617108268528" />
-    <state width="1877" height="280" key="GridCell.Tab.0.right/0.0.1920.1040/-1600.596.1600.860@0.0.1920.1040" timestamp="1617649605982" />
+    <state width="1877" height="280" key="GridCell.Tab.0.right/0.0.1920.1040/-1600.596.1600.860@0.0.1920.1040" timestamp="1617664732215" />
     <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1617648782908">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -295,10 +297,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040/-1600.596.1600.860@0.0.1920.1040" timestamp="1617648782908" />
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1617275120596">
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1617649912599">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1600.596.1600.860@0.0.1920.1040" timestamp="1617275120596" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1600.596.1600.860@0.0.1920.1040" timestamp="1617649912599" />
     <state x="342" y="140" key="new project wizard" timestamp="1617184825868">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
