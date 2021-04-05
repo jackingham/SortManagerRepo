@@ -16,7 +16,7 @@ public class SortFactory {
                 sorter = MergeSort.getInstance();
                 break;
             case BINARY:
-                //sorter = BinarySort.getInstance();
+                sorter = BinarySortInitialiser.getInstance();
                 break;
             default:
                 sorter = null;

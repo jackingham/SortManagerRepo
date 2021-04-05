@@ -14,12 +14,14 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 public class ExceptionTests {
     static Sorter bubbleSorter;
     static Sorter mergeSorter;
+    static Sorter binarySorter;
 
     @BeforeAll
     static void init(){
         SortFactory sortFactory = new SortFactory();
         bubbleSorter = sortFactory.getSorter(SortTypes.BUBBLE);
         mergeSorter = sortFactory.getSorter(SortTypes.MERGE);
+        binarySorter = sortFactory.getSorter(SortTypes.BINARY);
     }
 
     @Test
@@ -38,9 +40,7 @@ public class ExceptionTests {
     @DisplayName("Testing if merge sort will reject an empty array")
     public void testEmptyArray_merge(){
         int[] emptyArray = {};
-        Exception e = assertThrows(ArrayTooSmallException.class, () -> {
-            mergeSorter.sortArray(emptyArray);
-        });
+        Exception e = assertThrows(ArrayTooSmallException.class, () -> mergeSorter.sortArray(emptyArray));
         String expectedMessage = "Array too small!";
         String actualMessage = e.getMessage();
         assertTrue(actualMessage.contains(expectedMessage));
@@ -50,9 +50,7 @@ public class ExceptionTests {
     @DisplayName("Testing if bubble sort will reject an array too short")
     public void testShortArray_bubble(){
         int[] shortArray = {1};
-        Exception e = assertThrows(ArrayTooSmallException.class, () -> {
-            bubbleSorter.sortArray(shortArray);
-        });
+        Exception e = assertThrows(ArrayTooSmallException.class, () -> bubbleSorter.sortArray(shortArray));
         String expectedMessage = "Array too small!";
         String actualMessage = e.getMessage();
         assertTrue(actualMessage.contains(expectedMessage));
@@ -62,9 +60,7 @@ public class ExceptionTests {
     @DisplayName("Testing if bubble sort will reject an array too short")
     public void testShortArray_merge(){
         int[] shortArray = {1};
-        Exception e = assertThrows(ArrayTooSmallException.class, () -> {
-            mergeSorter.sortArray(shortArray);
-        });
+        Exception e = assertThrows(ArrayTooSmallException.class, () -> mergeSorter.sortArray(shortArray));
         String expectedMessage = "Array too small!";
         String actualMessage = e.getMessage();
         assertTrue(actualMessage.contains(expectedMessage));
@@ -74,9 +70,7 @@ public class ExceptionTests {
     @DisplayName("Testing if bubble sort will reject a null array")
     public void testNullArray_bubble(){
         int[] emptyArray = null;
-        Exception e = assertThrows(NullPointerException.class, () -> {
-            bubbleSorter.sortArray(emptyArray);
-        });
+        Exception e = assertThrows(NullPointerException.class, () -> bubbleSorter.sortArray(emptyArray));
         String expectedMessage = "Array is null!";
         String actualMessage = e.getMessage();
         assertTrue(actualMessage.contains(expectedMessage));
@@ -86,9 +80,7 @@ public class ExceptionTests {
     @DisplayName("Testing if merge sort will reject a null array")
     public void testNullArray_merge(){
         int[] emptyArray = null;
-        Exception e = assertThrows(NullPointerException.class, () -> {
-            mergeSorter.sortArray(emptyArray);
-        });
+        Exception e = assertThrows(NullPointerException.class, () -> mergeSorter.sortArray(emptyArray));
         String expectedMessage = "Array is null!";
         String actualMessage = e.getMessage();
         assertTrue(actualMessage.contains(expectedMessage));

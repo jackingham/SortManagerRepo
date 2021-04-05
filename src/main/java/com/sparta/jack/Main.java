@@ -23,6 +23,7 @@ public class Main {
 		Random generator = new Random();
     	for (int i = 0; i < arraySize; i++){
     		array[i] = generator.nextInt(10000);
+    		Printer.printMessage(Integer.toString(array[i]));
 		}
 
 
@@ -34,6 +35,8 @@ public class Main {
 
 			Sorter mergeSort = sortFactory.getSorter(SortTypes.MERGE);
 			int[] mergeSortedArray = mergeSort.sortArray(array);
+
+			Sorter binaryTreeSort = sortFactory.getSorter(SortTypes.BINARY);
 
 			Printer.printMessage(Arrays.toString(mergeSortedArray));
 
