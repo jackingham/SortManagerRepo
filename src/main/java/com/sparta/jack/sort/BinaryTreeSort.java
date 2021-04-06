@@ -1,9 +1,8 @@
 package com.sparta.jack.sort;
 
-import com.sparta.jack.exceptions.ArrayTooSmallException;
 import com.sparta.jack.exceptions.ChildNotFoundException;
 import com.sparta.jack.interfaces.BinaryTree;
-import com.sparta.jack.interfaces.Sorter;
+
 
 public class BinaryTreeSort implements BinaryTree {
 
@@ -25,22 +24,17 @@ public class BinaryTreeSort implements BinaryTree {
         }
     }
 
-    public void setRootElement(int rootIn){
-        root = new Node(rootIn);
-
-    }
-
     public void addElement(int element) {
-        root = insertNode(root, element);
-        numberOfElements++;
+            root = insertNode(root, element);
+            numberOfElements++;
 
-    }
+        }
 
     private Node insertNode(Node currentNode, int value) {
         if (currentNode == null) {
             return new Node(value);
         }
-        if (value < currentNode.value) {
+        else if (value < currentNode.value) {
             currentNode.left = insertNode(currentNode.left, value);
         } else if (value > currentNode.value) {
             currentNode.right = insertNode(currentNode.right, value);
@@ -55,7 +49,7 @@ public class BinaryTreeSort implements BinaryTree {
             if (findNodeFromValue(root, value) != null) {
                 return true;
             }
-        } catch (Exception e) {
+        } catch (ChildNotFoundException e) {
             return false;
         }
         return false;
@@ -112,9 +106,23 @@ public class BinaryTreeSort implements BinaryTree {
 
     }
 
+    int descendingElementIndex;
+    int[] descendingArray;
 
     public int[] getSortedTreeDesc() {
-        return new int[0];
+        descendingArray = new int[getNumberOfElements()];
+        descendingElementIndex = 0;
+        traverseDesc(root);
+        return descendingArray;
+    }
+
+    private void traverseDesc(Node node){
+        if (node != null) {
+            traverseDesc(node.right);
+            descendingArray[descendingElementIndex++] = node.value;
+            traverseDesc(node.left);
+        }
+
     }
 
 

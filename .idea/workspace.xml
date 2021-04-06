@@ -22,13 +22,22 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="07532167-e533-4e61-aed9-c279a29fccbf" name="Default Changelist" comment="Restructured BinaryTreeSort into 2 distinct classes as methods were proving inacessible during testing phases due to use of factory. Added some (successful) tests for constructing the binary tree.">
+    <list default="true" id="07532167-e533-4e61-aed9-c279a29fccbf" name="Default Changelist" comment="Finished asc sort and added functionality and performance tests">
+      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/sparta/jack/exceptions/DuplicateNodeException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/logFile.log" beforeDir="false" afterPath="$PROJECT_DIR$/resources/logFile.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/jack/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/jack/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/jack/interfaces/Sorter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/jack/interfaces/Sorter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/jack/sort/BinarySortInitialiser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/jack/sort/BinarySortInitialiser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/jack/sort/BinaryTreeSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/jack/sort/BinaryTreeSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/jack/sort/MergeSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/jack/sort/MergeSort.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/sparta/jack/BinarySortTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/sparta/jack/BinarySortTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/sparta/jack/FunctionalTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/sparta/jack/FunctionalTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/sparta/jack/PerformanceTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/sparta/jack/PerformanceTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/sparta/jack/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sparta/jack/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/sparta/jack/interfaces/Sorter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sparta/jack/interfaces/Sorter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/sparta/jack/sort/MergeSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sparta/jack/sort/MergeSort.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/logFile.log" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/logFile.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -61,7 +70,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../engineering82/SingletonPattern" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../engineering82/ReadWriteInJava" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -100,7 +109,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FunctionalTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BinarySortTests.testNullArray_binary" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SortManagerProject" />
       <extension name="coverage">
         <pattern>
@@ -109,8 +118,9 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.sparta.jack" />
-      <option name="MAIN_CLASS_NAME" value="com.sparta.jack.FunctionalTests" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="MAIN_CLASS_NAME" value="com.sparta.jack.BinarySortTests" />
+      <option name="METHOD_NAME" value="testNullArray_binary" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -130,7 +140,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PerformanceTests.testArray1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="com.sparta.jack in SortManagerProject" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SortManagerProject" />
       <extension name="coverage">
         <pattern>
@@ -139,9 +149,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.sparta.jack" />
-      <option name="MAIN_CLASS_NAME" value="com.sparta.jack.PerformanceTests" />
-      <option name="METHOD_NAME" value="testArray1" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -149,10 +157,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.PerformanceTests" />
-        <item itemvalue="JUnit.PerformanceTests.testArray1" />
-        <item itemvalue="JUnit.BinarySortTests" />
-        <item itemvalue="JUnit.FunctionalTests" />
+        <item itemvalue="JUnit.BinarySortTests.testNullArray_binary" />
+        <item itemvalue="JUnit.com.sparta.jack in SortManagerProject" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.BinarySortTests" />
       </list>
     </recent_temporary>
   </component>
@@ -200,7 +208,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617649913703</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Finished asc sort and added functionality and performance tests">
+      <created>1617664930540</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1617664930540</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -222,7 +237,8 @@
     <MESSAGE value="Fixed null checking from behaviour indicated by added test" />
     <MESSAGE value="Added basic functional tests for merge and bubble sort" />
     <MESSAGE value="Restructured BinaryTreeSort into 2 distinct classes as methods were proving inacessible during testing phases due to use of factory. Added some (successful) tests for constructing the binary tree." />
-    <option name="LAST_COMMIT_MESSAGE" value="Restructured BinaryTreeSort into 2 distinct classes as methods were proving inacessible during testing phases due to use of factory. Added some (successful) tests for constructing the binary tree." />
+    <MESSAGE value="Finished asc sort and added functionality and performance tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finished asc sort and added functionality and performance tests" />
   </component>
   <component name="WindowStateProjectService">
     <state x="666" y="290" key="#Log_Highlighting_(ideolog)" timestamp="1617200755609">
@@ -237,10 +253,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="414" y="174" width="1092" height="739" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/-1600.596.1600.860@0.0.1920.1040" timestamp="1617642753962" />
-    <state x="92" y="92" width="1736" height="856" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1617644692996">
+    <state x="92" y="92" width="1736" height="856" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1617714483075">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="92" y="92" width="1736" height="856" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1920.1040/-1600.596.1600.860@0.0.1920.1040" timestamp="1617644692996" />
+    <state x="92" y="92" width="1736" height="856" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1920.1040/-1600.596.1600.860@0.0.1920.1040" timestamp="1617714483075" />
     <state x="765" y="226" key="#com.intellij.ide.util.MemberChooser" timestamp="1617275466271">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -253,62 +269,78 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="494" y="444" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1920.1040/-1600.596.1600.860@0.0.1920.1040" timestamp="1617115036537" />
-    <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1617629815365">
+    <state x="743" y="388" width="433" height="269" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1617722969871">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/-1600.596.1600.860@0.0.1920.1040" timestamp="1617629815365" />
-    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1617225336437">
+    <state x="743" y="388" width="433" height="269" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1040/-1600.596.1600.860@0.0.1920.1040" timestamp="1617722969871" />
+    <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1617721985193">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/-1600.596.1600.860@0.0.1920.1040" timestamp="1617721985193" />
+    <state x="-983" y="823" key="FileChooserDialogImpl" timestamp="1617702989344">
+      <screen x="-1600" y="596" width="1600" height="860" />
+    </state>
+    <state x="-983" y="823" key="FileChooserDialogImpl/0.0.1920.1040/-1600.596.1600.860@-1600.596.1600.860" timestamp="1617702989344" />
     <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040/-1600.596.1600.860@0.0.1920.1040" timestamp="1617225336437" />
-    <state width="1877" height="280" key="GridCell.Tab.0.bottom" timestamp="1617664732215">
+    <state width="1877" height="348" key="GridCell.Tab.0.bottom" timestamp="1617739056400">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1557" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1600.596.1600.860@-1600.596.1600.860" timestamp="1617108268528" />
-    <state width="1877" height="280" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1600.596.1600.860@0.0.1920.1040" timestamp="1617664732215" />
-    <state width="1877" height="280" key="GridCell.Tab.0.center" timestamp="1617664732214">
+    <state width="1877" height="235" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1600.596.1600.860@-1600.596.1600.860" timestamp="1617723339949" />
+    <state width="1877" height="348" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1600.596.1600.860@0.0.1920.1040" timestamp="1617739056400" />
+    <state width="1877" height="348" key="GridCell.Tab.0.center" timestamp="1617739056400">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1557" height="281" key="GridCell.Tab.0.center/0.0.1920.1040/-1600.596.1600.860@-1600.596.1600.860" timestamp="1617108268528" />
-    <state width="1877" height="280" key="GridCell.Tab.0.center/0.0.1920.1040/-1600.596.1600.860@0.0.1920.1040" timestamp="1617664732214" />
-    <state width="1877" height="280" key="GridCell.Tab.0.left" timestamp="1617664732214">
+    <state width="1877" height="235" key="GridCell.Tab.0.center/0.0.1920.1040/-1600.596.1600.860@-1600.596.1600.860" timestamp="1617723339948" />
+    <state width="1877" height="348" key="GridCell.Tab.0.center/0.0.1920.1040/-1600.596.1600.860@0.0.1920.1040" timestamp="1617739056400" />
+    <state width="1877" height="348" key="GridCell.Tab.0.left" timestamp="1617739056400">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1557" height="281" key="GridCell.Tab.0.left/0.0.1920.1040/-1600.596.1600.860@-1600.596.1600.860" timestamp="1617108268528" />
-    <state width="1877" height="280" key="GridCell.Tab.0.left/0.0.1920.1040/-1600.596.1600.860@0.0.1920.1040" timestamp="1617664732214" />
-    <state width="1877" height="280" key="GridCell.Tab.0.right" timestamp="1617664732215">
+    <state width="1877" height="235" key="GridCell.Tab.0.left/0.0.1920.1040/-1600.596.1600.860@-1600.596.1600.860" timestamp="1617723339948" />
+    <state width="1877" height="348" key="GridCell.Tab.0.left/0.0.1920.1040/-1600.596.1600.860@0.0.1920.1040" timestamp="1617739056400" />
+    <state width="1877" height="348" key="GridCell.Tab.0.right" timestamp="1617739056400">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1557" height="281" key="GridCell.Tab.0.right/0.0.1920.1040/-1600.596.1600.860@-1600.596.1600.860" timestamp="1617108268528" />
-    <state width="1877" height="280" key="GridCell.Tab.0.right/0.0.1920.1040/-1600.596.1600.860@0.0.1920.1040" timestamp="1617664732215" />
-    <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1617648782908">
+    <state width="1877" height="235" key="GridCell.Tab.0.right/0.0.1920.1040/-1600.596.1600.860@-1600.596.1600.860" timestamp="1617723339948" />
+    <state width="1877" height="348" key="GridCell.Tab.0.right/0.0.1920.1040/-1600.596.1600.860@0.0.1920.1040" timestamp="1617739056400" />
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1617739056401">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040/-1600.596.1600.860@0.0.1920.1040" timestamp="1617648782908" />
-    <state width="1877" height="348" key="GridCell.Tab.1.center" timestamp="1617648782908">
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040/-1600.596.1600.860@0.0.1920.1040" timestamp="1617739056401" />
+    <state width="1877" height="348" key="GridCell.Tab.1.center" timestamp="1617739056400">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.center/0.0.1920.1040/-1600.596.1600.860@0.0.1920.1040" timestamp="1617648782908" />
-    <state width="1877" height="348" key="GridCell.Tab.1.left" timestamp="1617648782908">
+    <state width="1877" height="348" key="GridCell.Tab.1.center/0.0.1920.1040/-1600.596.1600.860@0.0.1920.1040" timestamp="1617739056400" />
+    <state width="1877" height="348" key="GridCell.Tab.1.left" timestamp="1617739056400">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.left/0.0.1920.1040/-1600.596.1600.860@0.0.1920.1040" timestamp="1617648782908" />
-    <state width="1877" height="348" key="GridCell.Tab.1.right" timestamp="1617648782908">
+    <state width="1877" height="348" key="GridCell.Tab.1.left/0.0.1920.1040/-1600.596.1600.860@0.0.1920.1040" timestamp="1617739056400" />
+    <state width="1877" height="348" key="GridCell.Tab.1.right" timestamp="1617739056401">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040/-1600.596.1600.860@0.0.1920.1040" timestamp="1617648782908" />
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1617649912599">
+    <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040/-1600.596.1600.860@0.0.1920.1040" timestamp="1617739056401" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1617664929970">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1600.596.1600.860@0.0.1920.1040" timestamp="1617649912599" />
-    <state x="342" y="140" key="new project wizard" timestamp="1617184825868">
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1600.596.1600.860@0.0.1920.1040" timestamp="1617664929970" />
+    <state x="342" y="140" key="new project wizard" timestamp="1617738391477">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="-1315" y="696" key="new project wizard/0.0.1920.1040/-1600.596.1600.860@-1600.596.1600.860" timestamp="1617108267085" />
-    <state x="342" y="140" key="new project wizard/0.0.1920.1040/-1600.596.1600.860@0.0.1920.1040" timestamp="1617184825868" />
+    <state x="342" y="140" key="new project wizard/0.0.1920.1040/-1600.596.1600.860@0.0.1920.1040" timestamp="1617738391477" />
     <state x="660" y="277" key="refactoring.ChangeSignatureDialog" timestamp="1617642818432">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="660" y="277" key="refactoring.ChangeSignatureDialog/0.0.1920.1040/-1600.596.1600.860@0.0.1920.1040" timestamp="1617642818432" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/sparta/jack/PerformanceTests.java</url>
+          <line>105</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
